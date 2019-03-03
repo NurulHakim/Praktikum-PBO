@@ -9,19 +9,11 @@ package PrakPbo;
  *
  * @author ASUS
  */
-public class Mahasiswa {
-    int nip;
-    String nama;
-    
-    public Mahasiswa(int i, String n){
-        nip = i;
-        nama = n;
+public class Test {
+    public static void main(String args[]){
+        Mahasiswa mhs = new Mahasiswa(12345, "Budi Mikarti");
+        System.out.println("NRP : "+mhs.getNrp());
+        System.out.println("Nama : "+mhs.getNama());
     }
     
-    public int getNrp(){
-        return nip;
-}
-    public String getNama(){
-        return nama;
-    }
 }
